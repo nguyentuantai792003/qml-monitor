@@ -4,6 +4,7 @@ Rectangle {
 	opacity: 0.7
 	color: "#eee"
 	width: height * 1.5
+
 	function toGB(bytes) {
 		if (bytes < 1024) {
 			return bytes + "B"
@@ -13,6 +14,15 @@ Rectangle {
 		}
 		return (bytes / 1024 / 1024).toFixed(1) + "M"
 	}
+
+	function factorial(n) {
+		var result = 1
+		for (var i = 1; i <= n; i++) {
+			result *= i
+		}
+		return result
+	}
+
 	Text {
 		font.pixelSize: 12
 		anchors.centerIn: parent
