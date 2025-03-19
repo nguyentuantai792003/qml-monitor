@@ -18,11 +18,13 @@ Rectangle {
 	function calculate(a, n) {
 		var result = 1
 		for (var i = 1; i <= n; i++) {
-			if (a > 0){
-			    result *= i
-			} else {
-			    result /= i
-			}
+			for (var y = 1; y <= n; i++){
+                if (a > 0){
+                    result *= i
+                } else {
+                    result /= i
+                }
+            }
 		}
 		return result
 	}
