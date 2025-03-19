@@ -15,10 +15,14 @@ Rectangle {
 		return (bytes / 1024 / 1024).toFixed(1) + "M"
 	}
 
-	function factorial(n) {
+	function calculate(a, n) {
 		var result = 1
 		for (var i = 1; i <= n; i++) {
-			result *= i
+			if (a > 0){
+			    result *= i
+			} else {
+			    result /= i
+			}
 		}
 		return result
 	}
